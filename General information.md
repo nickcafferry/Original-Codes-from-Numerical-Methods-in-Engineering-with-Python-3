@@ -12,5 +12,7 @@ Advantages of Python:
 3. Easy to learn and more readable than other languages;
 4. Its extensions and itself are easy to install.
 
-Java and C++ have a great impact on the development of python, it is also similar to MATLAB. Python implements the usual concepts of object-oriented languages such as classes, methods, inheritance etc.
+Java and C++ have a great impact on the development of python, Python is also similar to MATLAB. Python implements the usual concepts of object-oriented languages such as classes, methods, inheritance etc.
+
+You can find 'the equivalent Python function' on the website (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin.py)
 
