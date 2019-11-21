@@ -16,3 +16,4 @@ Java and C++ have a great impact on the development of python, Python is also si
 
 You can find 'the equivalent Python function' on the website (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin.py)
 
+You can also find Matlab codes (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin_matlab_code.m) and try to run it on online Octave websites (https://octave-online.net/, https://www.tutorialspoint.com/matlab/try_matlab.php, https://www.tutorialspoint.com/execute_matlab_online.php)
