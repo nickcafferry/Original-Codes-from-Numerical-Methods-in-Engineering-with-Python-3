@@ -18,10 +18,16 @@ You can find 'the equivalent Python function' on the website (https://github.com
 
 You can also find Matlab codes (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin_matlab_code.m) and try to run it on online Octave websites (https://octave-online.net/, https://www.tutorialspoint.com/matlab/try_matlab.php, https://www.tutorialspoint.com/execute_matlab_online.php)
 
-Below are some comments on python codes.\n
+Below are some comments on python codes.
+
+
 from numpy import dot
+
+
 """The command from numpy import dot instructs the interpreter to load the function dot (i.e., computes the dot product of two vectors) from the module numpy.""" 
+
 from numpy import array
+
 """import array"""
 def gaussElimin(a,b):
 """The colon(:) operator, known as the slicing operator in Python, works the same way it does in MATLAB and Fortran90(defines a selection of an array)"""
