@@ -56,3 +56,6 @@ def gaussElimin(a,b):
         b[k] = (b[k]-dot(a[k,k+1:n],b[k+1:n]))/a[k,k]
         
     return b
+
+ Obtaaing Python
+Python Language Website www.python.org. 
