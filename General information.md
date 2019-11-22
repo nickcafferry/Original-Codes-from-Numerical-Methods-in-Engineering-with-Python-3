@@ -17,3 +17,23 @@ Java and C++ have a great impact on the development of python, Python is also si
 You can find 'the equivalent Python function' on the website (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin.py)
 
 You can also find Matlab codes (https://github.com/nickcafferry/Original-Codes-from-Numerical-Methods-in-Engineering-with-Python-3/blob/master/GaussElimin_matlab_code.m) and try to run it on online Octave websites (https://octave-online.net/, https://www.tutorialspoint.com/matlab/try_matlab.php, https://www.tutorialspoint.com/execute_matlab_online.php)
+
+Below are some comments on python codes.
+
+from numpy import dot
+# The command from numpy import dot instructs the interpreter to load the function dot (i.e., computes the dot product of two vectors) from the module numpy. 
+from numpy import array
+# import array
+def gaussElimin(a,b):
+# The colon(:) operator, known as the slicing operator in Python, works the same way it does in MATLAB and Fortran90(defines a selection of an array)
+    n = len(b)
+    for k in range(0,n-1):
+# The differences in the ranges of k in python and MATLAB reflect the native offsets used for arrays. In Python, all sequences have zero offset while in MATLAB the native offset is 1.
+        for i in range(k+1,n):
+            if a[i,k]!=0.0:
+                lam =a[i,k]/a[k,k]
+                a[i,k+1:n] = a[i,k+1:n]-lam*a[k,k+1:n]
+                b[i]=b[i]-lam*b[k]
+    for k in range(n-1,-1,-1):
+        b[k] = (b[k]-dot(a[k,k+1:n],b[k+1:n]))/a[k,k]
+    return b
