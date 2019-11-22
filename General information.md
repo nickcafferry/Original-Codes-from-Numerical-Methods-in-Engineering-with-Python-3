@@ -21,14 +21,14 @@ You can also find Matlab codes (https://github.com/nickcafferry/Original-Codes-f
 Below are some comments on python codes.
 
 from numpy import dot
-#The command from numpy import dot instructs the interpreter to load the function dot (i.e., computes the dot product of two vectors) from the module numpy. 
+"""The command from numpy import dot instructs the interpreter to load the function dot (i.e., computes the dot product of two vectors) from the module numpy.""" 
 from numpy import array
-#import array
+"""import array"""
 def gaussElimin(a,b):
-#The colon(:) operator, known as the slicing operator in Python, works the same way it does in MATLAB and Fortran90(defines a selection of an array)
+"""The colon(:) operator, known as the slicing operator in Python, works the same way it does in MATLAB and Fortran90(defines a selection of an array)"""
     n = len(b)
     for k in range(0,n-1):
-#The differences in the ranges of k in python and MATLAB reflect the native offsets used for arrays. In Python, all sequences have zero offset while in MATLAB the native offset is 1.
+"""The differences in the ranges of k in python and MATLAB reflect the native offsets used for arrays. In Python, all sequences have zero offset while in MATLAB the native offset is 1."""
         for i in range(k+1,n):
             if a[i,k]!=0.0:
                 lam =a[i,k]/a[k,k]
